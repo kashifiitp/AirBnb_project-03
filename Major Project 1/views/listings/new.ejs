@@ -1,0 +1,47 @@
+<% layout("./layouts/boilerplate") %>
+<body>
+    
+     <form  method="POST" action="/listings">
+        <div class="row">
+            <div class="col-8 offset-2">
+               
+                <br>
+                <h3>Create new Listing</h3>
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+        <input type="text" name="listings[title]"  placeholder="title"  class="form-control">
+        </div>
+        <div class="mb-3">   
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listings[description]"  placeholder="description" class="form-control">description </textarea>
+       </div>
+         <div class="mb-3">
+        <label for="image" class="form-label">Image Link</label>    
+        <input type="text" name="listings[image]"   placeholder=" Enter image URL/Link" class="form-control">
+         </div>
+         <div class="row  ">
+             <div class="mb-3 col-md-4" >
+            <label for="price" class="form-label">Price</label>
+            <input type="text" name="listings[price]"  placeholder="1200" class="form-control"> 
+         </div>
+           <div class="mb-3 col-md-8" >
+            <label for="country" class="form-label">Country</label>
+                    <input type="text" name="listings[country]"   placeholder="India"  class="form-control">
+         </div>
+         </div>
+
+
+         <div class="mb-3">
+             <label for="location" class="form-label">Location</label>
+             <input type="text" name="listings[location]"  placeholder="Jaipur , Rajsthan"  class="form-control">
+         </div>
+
+        
+        <div class="mb-3"><button class="btn btn-dark  new_btn"  >Add</button></div>
+    <br>
+   
+     </form>
+     </div>
+    </div>
+</body>
+
